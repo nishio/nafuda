@@ -12,10 +12,17 @@ HTMLとJSで書かれていて、Nexus7のChromeで全画面表示で動かします。
 -[1] http://satoshiohshima.wordpress.com/
 -[2] https://dl.dropboxusercontent.com/u/370621/nafuda/nafuda.html#
 
+
+ダウンロード
+============
+
+gitでcloneするか、右の「Download Zip」ボタンから。
+
+
 カスタマイズ
 ============
 
-著者本人の名札のデータをそのまんま残してあります。
+著者本人の名札のデータをサンプルとしてそのまんま残してあります。
 
 単なるHTMLなので適当にいじって自分用の名札にしてください。
 
