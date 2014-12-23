@@ -9,8 +9,10 @@
 HTMLとJSで書かれていて、Nexus7のChromeで全画面表示で動かします。
 著者本人の名札が[2]に置かれています。
 
--[1] http://satoshiohshima.wordpress.com/
--[2] https://dl.dropboxusercontent.com/u/370621/nafuda/nafuda.html#
+
+- [1] http://satoshiohshima.wordpress.com/
+
+- [2] https://dl.dropboxusercontent.com/u/370621/nafuda/nafuda.html#
 
 
 ダウンロード
@@ -41,12 +43,14 @@ MITライセンス（ただし画像ファイルはサンプルなので除く）
 使用しているライブラリ
 
 - jQuery(MIT) http://jquery.com/
+ 
 - Owl Carousel(MIT) http://www.owlgraphic.com/owlcarousel/
 
 known issues
 ============
 
 - rewindのアニメーションが高速なのが気になる人もいるっぽい。先頭と末尾のアイテムを同一にして最終アイテムが表示された時に先頭にアニメーションなしで移動すればrewindなしにできるけど、個人的にはあんまり気にならない。
+
 - いま、アニメーション停止ボタンが全画面表示対象divの外にあるので、全画面表示を解除しないと操作できない。アイテムをドラッグした際に一時停止になり、自動再生再開ボタンはposition: absoluteとかで上半分に出したらいいと思う。
 
 history
