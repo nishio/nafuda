@@ -10,9 +10,9 @@ HTMLとJSで書かれていて、Nexus7のChromeで全画面表示で動かします。
 著者本人の名札が[2]に置かれています。
 
 
-- [1] http://satoshiohshima.wordpress.com/
+1. http://satoshiohshima.wordpress.com/
 
-- [2] https://dl.dropboxusercontent.com/u/370621/nafuda/nafuda.html#
+2. https://dl.dropboxusercontent.com/u/370621/nafuda/nafuda.html#
 
 
 ダウンロード
