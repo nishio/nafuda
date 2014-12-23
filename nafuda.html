@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>デジタル名札</title>
+
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+ 
+<!--  jQuery 1.7+  -->
+<script src="jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+
+<style>
+h1 {
+  font-size: 900%;
+  margin: 0px;
+  letter-spacing: -5px;
+}
+h2 {
+  font-size: 300%;
+  margin: 0px;
+  letter-spacing: -2px;
+}
+p {
+  margin: 0px;
+}
+
+#sub div {
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+<div id="main" style="width: 640px; height=960px; border: solid 1px; text-align: center;">
+<div style="height=480px;">
+  <h1 style='margin-bottom: 10px'>西尾泰和</h1>
+  <h2 style='margin-bottom: 7px'>H14未踏ユース スパクリ</h2>
+  <h2 style='margin-bottom: 7px'>サイボウズ・ラボ</h2>
+  <h2 style='margin-bottom: 7px'>今の関心：知的能力の増強</h2>
+</div>
+
+<div id="sub" style="width: 100%; height=480px; background: #afa;" class="owl-carousel">
+
+<div>
+<img src="word2vec.jpeg" height="480px">
+</div>
+
+<div style="background: black">
+<img src="shuffle.png" height="480px">
+</div>
+
+<div>
+<img src="coding.jpeg" height="480px">
+</div>
+
+<div>
+<img src="virtualstar.jpg" height="480px">
+</div>
+
+<div>
+<img src="3dnws.png" height="480px">
+</div>
+
+<div>
+<img src="genomev4.png" height="480px">
+</div>
+
+<div>
+<img src="nouha.png" height="480px">
+</div>
+
+<div style="text-align: left; background: white">
+<img src="fermat.png" height="480px">
+</div>
+
+
+<div>
+<img src="sakushi.png" height="480px">
+</div>
+
+<div>
+<img src="jython.jpg" height="480px">
+</div>
+
+</div>
+</div>
+
+<a href="#" onclick="owl.trigger('owl.play')">Auto Play</a>
+<a href="#" onclick="owl.trigger('owl.stop')">Stop</a>
+<a href="#" onclick="document.getElementById('main').webkitRequestFullscreen()">Full Screen</a>
+
+
+
+<script>
+$(document).ready(function() {
+  $("#sub").owlCarousel({
+    autoPlay : 5000,
+    autoHeight: true,
+    singleItem:true
+  });
+});
+</script>
+</body>
+</html>
