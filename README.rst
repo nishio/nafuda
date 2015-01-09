@@ -1,70 +1,71 @@
 ============
-�f�W�^�����D
+デジタル名札
 ============
 
-�哇���j�搶[1]��2012�N�̃v���O���~���O�V���|�W�E���ŁA
-�񂩂牺�����^�u���b�g�ŃX���C�h�V���[�\�����Ă�̂����āA
-��������肽���Ȃ����̂ō��܂����B
+大島聡史先生[1]が2012年のプログラミングシンポジウムで、
+首から下げたタブレットでスライドショー表示してるのを見て、
+自分もやりたくなったので作りました。
 
-HTML��JS�ŏ�����Ă��āA�M�҂�Nexus7��Chrome�őS��ʕ\���œ������Ă��܂��B
-���Җ{�l�̖��D��[2]�ɒu����Ă���̂ŁA���莝���̒[���ŕ\�����Ă݂�Ƃ悢���ƁB
+HTMLとJSで書かれていて、筆者はNexus7のChromeで全画面表示で動かしています。
+著者本人の名札が[2]に置かれているので、お手持ちの端末で表示してみるとよいかと。
 
 1. http://satoshiohshima.wordpress.com/
 
 2. https://dl.dropboxusercontent.com/u/370621/nafuda/nafuda.html#
 
 
-�_�E�����[�h
+ダウンロード
 ============
 
-git��clone���邩�A�E�́uDownload Zip�v�{�^������B
+gitでcloneするか、右の「Download Zip」ボタンから。
 
 
-�J�X�^�}�C�Y
+カスタマイズ
 ============
 
-���Җ{�l�̖��D�̃f�[�^���T���v���Ƃ��Ă��̂܂�܎c���Ă���܂��B
+著者本人の名札のデータをサンプルとしてそのまんま残してあります。
 
-�P�Ȃ�HTML�Ȃ̂œK���ɂ������Ď����p�̖��D�ɂ��Ă��������B
+単なるHTMLなので適当にいじって自分用の名札にしてください。
 
-�f�v���C
+デプロイ
 ========
 
-���̃t�H���_���܂邲��Dropbox��Public�t�H���_�ɓ˂����݁A�E�N���b�N����u���J�����N���R�s�[�v���āA����URL��Nexus7��Chrome�ŊJ�������B
+このフォルダをまるごとDropboxのPublicフォルダに突っ込み、右クリックから「公開リンクをコピー」して、そのURLをNexus7のChromeで開くだけ。
 
-�c�O�Ȃ���Dropbox�A�J�E���g��������̂�2014�N7���ȍ~����Public�t�H���_���Ȃ��炵���ł��B�ÓI�ɃT�[�u�ł���΂Ȃ�ł������̂ł��̏ꍇ��VPS���؂��Ȃ莩�O�ŃT�[�o�𗧂Ă�Ȃ�悵�Ȃɂ���Ă��������B
+残念ながらDropboxアカウントを作ったのが2014年7月以降だとPublicフォルダがないらしいです。静的にサーブできればなんでもいいのでその場合はVPSを借りるなり自前でサーバを立てるなりよしなにやってください。
 
-������@
+操作方法
 ========
 
-�uAutoplay�v�Ŏ����X�N���[���̊J�n�A�uStop�v�Ŏ����X�N���[���̒�~�A�uFull Screen�v�őS��ʕ\���B
+「Autoplay」で自動スクロールの開始、「Stop」で自動スクロールの停止、「Full Screen」で全画面表示。
 
-�\���A�C�e���̍��E�h���b�Oor�X���C�v�őO��̃A�C�e����\�����邱�Ƃ��ł��܂��B
+表示アイテムの左右ドラッグorスワイプで前後のアイテムを表示することができます。
 
-���C�Z���X
+ライセンス
 ==========
 
-MIT���C�Z���X�i�������摜�t�@�C���̓T���v���Ȃ̂ŏ����j
+MITライセンス（ただし画像ファイルはサンプルなので除く）
 
-�g�p���Ă��郉�C�u����
+使用しているライブラリ
 
 - jQuery(MIT) http://jquery.com/
- 
+
 - Owl Carousel(MIT) http://www.owlgraphic.com/owlcarousel/
 
 known issues
 ============
 
-- rewind�̃A�j���[�V�����������Ȃ̂��C�ɂȂ�l��������ۂ��B�擪�Ɩ����̃A�C�e���𓯈�ɂ��čŏI�A�C�e�����\�����ꂽ���ɐ擪�ɃA�j���[�V�����Ȃ��ňړ������rewind�Ȃ��ɂł��邯�ǁA�l�I�ɂ͂���܂�C�ɂȂ�Ȃ��B
+- rewindのアニメーションが高速なのが気になる人もいるっぽい。先頭と末尾のアイテムを同一にして最終アイテムが表示された時に先頭にアニメーションなしで移動すればrewindなしにできるけど、個人的にはあんまり気にならない。
 
-- ���܁A�A�j���[�V������~�{�^�����S��ʕ\���Ώ�div�̊O�ɂ���̂ŁA�S��ʕ\�����������Ȃ��Ƒ���ł��Ȃ��B�A�C�e�����h���b�O�����ۂɈꎞ��~�ɂȂ�A�����Đ��ĊJ�{�^����position: absolute�Ƃ��ŏ㔼���ɏo�����炢���Ǝv���B
+- いま、アニメーション停止ボタンが全画面表示対象divの外にあるので、全画面表示を解除しないと操作できない。アイテムをドラッグした際に一時停止になり、自動再生再開ボタンはposition: absoluteとかで上半分に出したらいいと思う。
 
 history
 =======
 
-- 2014-12-22 �����Y�N��̂��߂ɑ�}���ō����
+- 2015-01-09 Chrome以外でのフルスクリーン機能を追加。stopが動いていなかったのを修正。改行コード。第65回プログラミングシンポジウムにて。
+- 2014-12-22 未踏忘年会のために大急ぎで作った
 
-���̑�
+その他
 ======
 
-�o�b�e���[�̎������S�z���������A2���Ԍo����70%�c���Ă��̂ŕ��ʂ̍��e��p�ɂ͏\�������B
+バッテリーの持ちが心配だったが、2時間経って70%残ってたので普通の懇親会用には十分そう。
